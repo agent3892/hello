@@ -1,15 +1,14 @@
-package mypackage
+package main
 
 import (
 	"fmt"
 
-	"github.com/agent3892/hello/mypackage"
+	library "github.com/agent3892/hello/mypackage"
 )
 
 func main() {
 	fmt.Println("Hello, Go!")
 
-	message := mypackage.Greet()
+	message := library.Greet()
 	fmt.Println(message)
-
 }

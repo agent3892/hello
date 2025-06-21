@@ -1,8 +1,7 @@
-package main
+package mypackage
 
 import (
 	"fmt"
-	// "github.com/agent3892/hello"
 )
 
 func main() {

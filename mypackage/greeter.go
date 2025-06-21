@@ -1,5 +1,5 @@
 // Gemini
-package library
+package mypackage
 
 func Greet() string {
 	return "Greetings from the Github library!"

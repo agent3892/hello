@@ -1,6 +1,6 @@
 package main
 
-import ()
+import (
 	"fmt"
 	"github.com/agent3892/hello"
 )

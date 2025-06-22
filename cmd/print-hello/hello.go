@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello, Go!")
+	fmt.Println("Hello, Mr. Go!")
 
 	message := library.Greet()
 	fmt.Println(message)

@@ -1,0 +1,24 @@
+ go get github.com/me/hello/mypackage
+
+
+This command tells Go to add or update a dependency on the module that provides the package github.com/me/hello/mypackage — and download it into your module cache.
+But here’s the twist: Go modules operate at the module level, not the package level. So when you run:  go get github.com/me/hello/mypackage
+
+
+
+
+Go tries to:
+- Resolve the module path — usually github.com/me/hello
+- Check if that module contains the package mypackage
+- Download the module and update your go.mod and go.sum accordingly
+
+
+
+
+✅ When it works:
+- The module github.com/me/hello exists and is tagged (e.g. v0.1.0)
+- The go.mod in that repo says:
+	module github.com/me/hello
+- And the subdirectory mypackage/ contains Go code with:
+	package mypackage
+
